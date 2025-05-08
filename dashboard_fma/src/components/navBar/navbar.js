@@ -30,27 +30,30 @@ function NavBar() {
                             onClick={() => handleNavigation('')}
                             className="cursor-pointer"
                         />
-                        <a onClick={() => handleNavigation('')} className=" text-blue-950 text-xl font-bold cursor-pointer">
-                            MKM Agency
-                        </a>
                     </div>
 
 
                     <div className="hidden md:flex items-center space-x-8">
+                    <a
+                            className="text-blue-600 font-bold cursor-pointer hover:bg-blue-600 hover:text-white px-4 py-2 rounded-lg"
+                            onClick={() => handleNavigation('')}
+                        >
+                            Inicio
+                        </a>
                         <a
-                            className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg"
+                            className="text-blue-600 font-bold cursor-pointer hover:bg-blue-600 hover:text-white px-4 py-2 rounded-lg"
                             onClick={() => handleNavigation('projects')}
                         >
                             Trabajos hechos
                         </a>
                         <a
-                            className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg"
+                            className="text-blue-600	 font-bold cursor-pointer hover:bg-blue-600 hover:text-white px-4 py-2 rounded-lg"
                             onClick={() => handleNavigation('aboutUs')}
                         >
                             Sobre nosotros
                         </a>
                         <a
-                            className="text-blue-950 font-bold cursor-pointer hover:bg-blue-950 hover:text-white px-4 py-2 rounded-lg"
+                            className="text-blue-600	 font-bold cursor-pointer hover:bg-blue-600 hover:text-white px-4 py-2 rounded-lg"
                             onClick={() => handleNavigation('contact')}
                         >
                             Contactanos
