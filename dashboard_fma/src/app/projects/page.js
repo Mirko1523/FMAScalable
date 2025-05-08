@@ -15,16 +15,25 @@ export default function Projects() {
         { name: "Quinta los Buhos", url: "https://quintalosbuhos.vercel.app/", preview: "/previews/quintalosbuhos.png" },
     ]
 
+    const proyectos2 = [
+        { name: "Vaca Retá", url: "https://www.instagram.com/vacaretaveterinaria?igsh=MWhmZ25rZW9kbHpyOA==", preview: "/previews/vacareta.png" },
+        { name: "Carniceria El Vasco", url: "https://www.instagram.com/elvasco_carniceria?igsh=MTFrZ2UxdmducjVyZw==", preview: "/previews/elvasco.png" },
+        { name: "ModernFitMethod", url: "https://www.instagram.com/modernfitmethod?igsh=MjN0eTQ0NXVqbGV6", preview: "/previews/modernfit.png" },
+
+
+    ]
+
+
     return (
         <div className="min-h-screen bg-neutral-100">
             <NavBar />
 
             <main className="max-w-7xl mx-auto px-4 py-8">
-                <h2 className="text-3xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-950 to-indigo-900">
-                    Prototipos de Sitios Web (Bocetos Virtuales)
+                <h2 className="text-3xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-900">
+                    Sitios Web (Prototipos Virtuales)
                 </h2>
                 <p className="mb-8 text-gray-600">
-                    Estos diseños conceptuales muestran la estética y funcionalidad que puedo desarrollar en producción. ¡Pronto aquí verás proyectos 100% en vivo!
+                    Estos diseños conceptuales muestran la estética y funcionalidad que puedo desarrollar en producción.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -45,13 +54,49 @@ export default function Projects() {
                                 />
                             </div>
                             <div className="p-4">
-                                <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+                                <h3 className="text-xl font-semibold text-gray-600 group-hover:text-blue-600 transition-colors">
                                     {p.name}
                                 </h3>
                             </div>
                         </Link>
                     ))}
                 </div>
+            </main>
+            <main className="max-w-7xl mx-auto px-4 py-8">
+            <h2 className="text-3xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-900">
+                    Perfiles de Instagram 
+                </h2>
+                <p className="mb-8 text-gray-600">
+                    Estos son perfiles de personas que han trabajado con nosotros, mostrando su confianza en nuestros servicios y proyectos.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {proyectos2.map((p, i) => (
+                        <Link
+                            key={i}
+                            href={p.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group block overflow-hidden rounded-2xl shadow-md bg-white transform transition hover:scale-105 hover:shadow-xl"
+                        >
+                            <div className="relative w-full h-48">
+                                <Image
+                                    src={p.preview}
+                                    alt={`Preview de ${p.name}`}
+                                    fill
+                                    className="object-cover group-hover:scale-110 transition-transform duration-300"
+                                />
+                            </div>
+                            <div className="p-4">
+                                <h3 className="text-xl font-semibold text-gray-600 group-hover:text-blue-600 transition-colors">
+                                    {p.name}
+                                </h3>
+                            </div>
+                        </Link>
+                    ))}
+                </div>
+
+
             </main>
         </div>
     )
