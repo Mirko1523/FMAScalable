@@ -46,13 +46,13 @@ function AboutUs() {
                     <div className="flex flex-col items-center w-40">
                         <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-300 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
                             <a
-                                href="https://www.instagram.com/catajurado_/"
+                                href="https://www.instagram.com/faascalable.sp/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Visitar perfil de Mirko en LinkedIn"
                             >
                                 <Image
-                                    src="/perfilMirko.jpg"
+                                    src="/perfilfran.jpg"
                                     alt="Perfil de Mirko"
                                     className="w-full h-full object-cover"
                                     width={160}
@@ -62,27 +62,6 @@ function AboutUs() {
                         </div>
                         <p className="text-lg text-gray-600 mt-4 font-semibold">Co-Founder</p>
                         <p className="text-lg text-gray-600">Jefe de marketing</p>
-                    </div>
-
-                    {/* Profile 3 */}
-                    <div className="flex flex-col items-center w-40">
-                        <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-gray-300 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110">
-                            <a
-                                href="https://www.linkedin.com/in/mirko-miler-290bb3295/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label="Visitar perfil de Mirko en LinkedIn"
-                            >
-                                <Image
-                                    src="/perfilMirko.jpg"
-                                    alt="Perfil de Mirko"
-                                    className="w-full h-full object-cover"
-                                    width={160}
-                                    height={160}
-                                />
-                            </a>
-                        </div>
-                        <p className="text-lg text-gray-600 mt-4 font-semibold">Jefa de ventas</p>
                     </div>
 
                 </div>

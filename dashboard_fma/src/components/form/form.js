@@ -47,7 +47,7 @@ function SendForm() {
 
     return (
         <div className="max-w-lg mx-auto mt-10 p-5">
-            <h2 className="text-2xl font-bold text-gray-900 text-center mb-5">
+            <h2 className="text-2xl font-bold text-blue-600 text-center mb-5">
                 Contactanos para que construyamos juntos tu idea!
             </h2>
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -131,7 +131,7 @@ function SendForm() {
                 <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="block mx-auto font-bold py-2 px-5 text-gray-950  rounded-lg hover:bg-blue-950 hover:text-white transition disabled:opacity-50"
+                    className="block mx-auto font-bold py-2 px-5 text-blue-600  rounded-lg hover:bg-blue-600 hover:text-white transition disabled:opacity-50"
                 >
                     {isSubmitting ? "Enviando..." : "Enviar"}
                 </button>

@@ -6,7 +6,7 @@ function Footer() {
             <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <hr className="my-6 border-blue-600 font-bold sm:mx-auto lg:my-8" />
                 <div className="flex flex-col items-center sm:flex-row sm:justify-between">
-                    {/* Sección de copyright */}
+
                     <span className="block text-sm text-blue-600 font-bold sm:text-center mb-4 sm:mb-0">
                         © 2025 <a href="/" className="hover:underline">FMA Scalable</a>. All Rights Reserved.
                     </span>
@@ -14,7 +14,7 @@ function Footer() {
                     <div className="flex flex-col items-center mb-4 sm:mb-0">
                         <p className="text-sm text-blue-600 font-bold mb-2">¡Síguenos en Instagram!</p>
                         <a
-                            href="https://www.instagram.com/_mkmagency/"
+                            href="https://www.instagram.com/fma.scalable?igsh=MW1xaWpvaWFpbGlwbw%3D%3D"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Visitar perfil de Mkm Agency en Instagram"
